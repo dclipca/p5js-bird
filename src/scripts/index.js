@@ -32,7 +32,7 @@ let draw = (p5) => {
 ///////////////////////// Loading the images /////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
  
-  var playerFrame00Right = p5.loadImage('https://i.ibb.co/JyXQTwk/player-Frame00.png');
+  	var playerFrame00Right = p5.loadImage('https://i.ibb.co/JyXQTwk/player-Frame00.png');
 	var playerFrame01Right = p5.loadImage('https://i.ibb.co/m5Hkkw4/player-Frame01.png');
 	var playerFrame02Right = p5.loadImage('https://i.ibb.co/kHwpjRj/player-Frame02.png');
 	var playerFrame03Right = p5.loadImage('https://i.ibb.co/dmQJLyt/player-Frame03.png');
