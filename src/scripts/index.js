@@ -6,8 +6,6 @@ import * as P5 from 'p5';
 
 		var customWidth = 1920;
 		var customHeight = 1080;
-		var playerHeight = 32;
-		var playerWidth = 32;
 		var playerXvelocity =  0;
 		var playerYvelocity = 0;
 		var playerXpos = customWidth/2;
@@ -16,9 +14,6 @@ import * as P5 from 'p5';
 		var imageAnimationNumberRight = 0;
 		var imageAnimationNumberIntLeft = 0;
 		var imageAnimationNumberIntRight = 0;
-		var playerIsRight = false;
-		var playerIsLeft = false;
-		var playerJumps = false;
 
 //////////////////////////////////////////////////////////////////////////////////
 ///////////////////////// Variables //////////////////////////////////////////////
@@ -53,12 +48,12 @@ let draw = (p5) => {
 
 
 
-  // Storing the player image names in a array
+  // Storing player images in an array
 
   var playerAnimationArrayRight = [playerFrame00Right, playerFrame01Right, playerFrame02Right, playerFrame03Right];
   var playerAnimationArrayLeft = [playerFrame00Left, playerFrame01Left, playerFrame02Left, playerFrame03Left];
 
-  //Loading backgrouind images
+  // Loading background images
   var gameBackground = p5.loadImage('https://i.ibb.co/8jJ3ps2/background.png');
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -79,8 +74,6 @@ var xPosBackgroundSceneArray = [-1920, 0, 1920];
 //////////////////////////////////////////////////////////////////////////////////
 ///////////////////////// Inner background ///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
-
-// Changing the background if player goes up or down
 
 if (playerYpos > customHeight/2)
 
@@ -103,9 +96,6 @@ if (playerYpos < customHeight/2)
 ///////////////////////// Inner background ///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
-//Scene generator (adds X positions in the background images array)
 
 for (var i = 1; 1920*i < playerXpos; i++) {
 
