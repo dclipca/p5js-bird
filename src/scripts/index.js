@@ -86,8 +86,6 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 
 }
 
-
-
 // Key logic
 
 	var keyReceptor = function(event) {
