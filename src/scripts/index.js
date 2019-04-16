@@ -1,16 +1,17 @@
 import * as P5 from 'p5';
 
 // Variables
-		var customWidth = 1920;
-		var customHeight = 1080;
-		var playerXvelocity =  0;
-		var playerYvelocity = 0;
-		var playerXpos = customWidth/2;
-  		var	playerYpos = customHeight/2;
-		var imageAnimationNumberLeft = 0;
-		var imageAnimationNumberRight = 0;
-		var imageAnimationNumberIntLeft = 0;
-		var imageAnimationNumberIntRight = 0;
+
+	var customWidth = 1920;
+	var customHeight = 1080;
+	var playerXvelocity =  0;
+	var playerYvelocity = 0;
+	var playerXpos = customWidth/2;
+  	var playerYpos = customHeight/2;
+	var imageAnimationNumberLeft = 0;
+	var imageAnimationNumberRight = 0;
+	var imageAnimationNumberIntLeft = 0;
+	var imageAnimationNumberIntRight = 0;
 
 let draw = (p5) => {
   p5.setup = () => {
