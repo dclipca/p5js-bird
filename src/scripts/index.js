@@ -54,18 +54,13 @@ var xPosBackgroundSceneArray = [-1920, 0, 1920];
 if (playerYpos > customHeight/2)
 
 {
-	
 	p5.background(81, 145, 160);
-
-
 }
 
 if (playerYpos < customHeight/2)
 
 {
-
 	p5.background(75, 222, 232);
-
 }
 
 
@@ -74,8 +69,6 @@ for (var i = 1; 1920*i < playerXpos; i++) {
 	xPosBackgroundSceneArray = [(i-1)*1920];
 	xPosBackgroundSceneArray.push(i*1920);
 	xPosBackgroundSceneArray.push((i+1)*1920);
-
-
 };
 
 for (var i = 1; -500*i > playerXpos; i++) {
@@ -98,7 +91,6 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 // Key logic
 
 	var keyReceptor = function(event) {
-	
 	var keyState = (event.type === 'keydown')?true:false;
 
 	// Key logic
@@ -113,8 +105,6 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 			playerIsLeft = false;
 			keyState == false;
 		}
-
-
 
 		if (playerYvelocity < -10) {
 			playerYvelocity = -10;
@@ -159,7 +149,6 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 
 	playerXpos += playerXvelocity;
 	playerYpos += playerYvelocity;
-
 	
 	// Gravity
 
@@ -171,8 +160,7 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 	playerYpos = -customHeight/4;
 	playerYvelocity = 0;
 	}
-
-
+	  
 	// Friction
 
 	playerXvelocity *= 0.999;
@@ -187,7 +175,6 @@ if (imageAnimationNumberLeft > 3) {
 };
 
 imageAnimationNumberIntLeft = Math.round(imageAnimationNumberLeft);
-
 
 imageAnimationNumberRight += 0.5;
 
