@@ -117,49 +117,36 @@ p5.image(gameBackground, xPosBackgroundSceneArray[i], 0);
 	playerXvelocity *= 0.9999;
 	playerYvelocity *= 0.9999;
 
-// Animation 
-	  
+// Animation
 imageAnimationNumberLeft += 0.5;
-
 if (imageAnimationNumberLeft > 3) {
   imageAnimationNumberLeft = 0;
 };
 
 imageAnimationNumberIntLeft = Math.round(imageAnimationNumberLeft);
-
 imageAnimationNumberRight += 0.5;
 
 if (imageAnimationNumberRight > 3) {
   imageAnimationNumberRight = 0;
 };
-
+	  
 imageAnimationNumberIntRight = Math.round(imageAnimationNumberRight);
-
+	  
 if (playerYvelocity < 0 && playerXvelocity == 0) {
 	p5.image(playerAnimationArrayRight[imageAnimationNumberIntRight], playerXpos, playerYpos, 717/15, 610/15);
-
 };
-
 if (playerYvelocity > 0 && playerXvelocity == 0) {
 	p5.image(playerAnimationArrayRight[3], playerXpos, playerYpos, 717/15, 610/15);
-
 };
-
 if (playerYvelocity > 0 && playerXvelocity > 0) {
 	p5.image(playerAnimationArrayRight[0], playerXpos, playerYpos, 717/15, 610/15);
-
 };
-
 if (playerYvelocity > 0 && playerXvelocity < 0) {
 	p5.image(playerAnimationArrayLeft[0], playerXpos, playerYpos, 717/15, 610/15);
-
 };
-
 if (playerYvelocity < 0 && playerXvelocity < 0) {
 	p5.image(playerAnimationArrayLeft[imageAnimationNumberIntLeft], playerXpos, playerYpos, 717/15, 610/15);
-
 };
-
 if (playerYvelocity < 0 && playerXvelocity > 0) {
 	p5.image(playerAnimationArrayRight[imageAnimationNumberIntRight], playerXpos, playerYpos, 717/15, 610/15);
 
