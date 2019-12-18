@@ -18,11 +18,6 @@ yarn start
 ```
 
 ![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image1.png?raw=true)
-![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image2.png?raw=true)
-![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image3.png?raw=true)
-![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image4.png?raw=true)
-![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image5.png?raw=true)
-![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image6.png?raw=true)
 ![alt text](https://github.com/virtumonde/p5js-bird/blob/master/images/image7.png?raw=true)
 
 
