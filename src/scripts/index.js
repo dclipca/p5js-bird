@@ -45,7 +45,6 @@ for (let i = 1; 1920*i < playerXpos; i++) {
 	xPosBackgroundSceneArray.push((i+1)*1920);
 };
 for (let i = 1; -500*i > playerXpos; i++) {
-
 	xPosBackgroundSceneArray = [(i+1)*1920];
 	xPosBackgroundSceneArray.push(i*1920);
 	xPosBackgroundSceneArray.push((i-1)*1920);
